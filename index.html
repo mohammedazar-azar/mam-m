@@ -1,0 +1,74 @@
+HTML Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question for You</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            color: #333;
+            padding: 50px;
+        }
+        .container {
+            margin-top: 200px;
+            margin-left: auto;
+            background:skyblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 
+
+rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: #28a745;
+            color: white;
+        }
+        .yes:hover {
+
+            background-color: #218838;
+        }
+        .no {
+            background-color: #dc3545;
+            color: white;
+            position: absolute;
+        }
+    </style>
+    <script>
+        function moveNoButton() {
+            let noButton = document.getElementById("noButton");
+            noButton.style.top = Math.random() * window.innerHeight + "px";
+            noButton.style.left = Math.random() * window.innerWidth + "px";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Will you be mine? ❤️smell mam</h1>
+        <p>I've been meaning to ask you this for a while...</p>
+        <div class="buttons">
+            <button class="btn yes" onclick="alert('Yay! You made my day! ❤️')">Yes</button>
+            <button class="btn no" id="noButton" onmouseover="moveNoButton()">No</button>
+        </div>
+    </div>
+</body>
+</html>
